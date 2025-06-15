@@ -1,0 +1,155 @@
+.header {
+	padding-top: 30px;
+	min-height: 850px;
+	background-color: $mainColor;
+	&_nav {
+		display: flex;
+		justify-content: space-between;
+	}
+	&_navbar {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		a {
+			color: #fff;
+			font-size: 14px;
+			font-weight: 200;
+		}
+	}
+	.logo {
+		flex: 2;
+		margin-left: 10%;
+	}
+
+	&_modal {
+		display: flex;
+		width: 70px;
+		
+		justify-content: space-between;
+		align-items: center;
+		a {
+			color: #fff;
+		}
+	}
+
+	&_wrapper {
+		position: relative;
+		margin-top: 50px;
+		display: flex;
+		justify-content: space-between;
+		z-index: 1;
+	}
+
+	&_descr{
+		margin-top: 100px;
+		width: 520px;
+		h1 {
+			font-family: "Montserrat", sans-serif;
+			color: #fff;
+			font-size: 69px;
+		}
+		p {
+			margin-top: 45px;
+			color: #fff;
+			font-size: 16px;
+			font-weight: 200;
+		}
+	}
+
+	.order {
+		margin-top: 40px;
+		display: flex;
+		gap: 43px;
+		align-items: center;
+		a {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			color: #fff;
+			font-size: 16px;
+			img {
+				display: block;
+				margin-left: 10px;
+			}
+		}
+
+	}
+
+	&_showcase {
+		display: grid;
+		width: 607px;
+		height: 650px;
+		gap: 5px;
+		grid-template-columns: 222px 380px;
+		grid-template-rows: repeat(2, 325px);
+		overflow: hidden;
+		border-radius: 20px;
+
+	
+		.case {
+			cursor: pointer;
+			position: relative;
+			transition: 0.5s all;
+			overflow: hidden;
+			border-radius: 15px;
+			img {
+				display: block;
+				object-fit: cover;
+				height: 100%;
+				width: 100%;
+			}
+			&:nth-child(2) {
+				position: relative;
+				grid-row: span 2;
+				&::before {
+					content: '';
+					z-index: 1;
+					width: 100%;
+					height: 100%;
+					display: block;
+					position: absolute;
+					background: linear-gradient(0deg, rgba(0, 79, 68, 1) 10%, rgba(0, 79, 68, 0) 50%);
+				}
+				p {
+					z-index: 3;
+					color: #fff;
+					position: absolute;
+					font-size: 14px;
+					font-weight: 100;
+					bottom: 80px;
+					left: 20px;
+				}
+				h2 {
+					margin: 0 auto;
+					color: #fff;
+					position: absolute;
+					z-index: 3;
+					font-size: 32px;
+					font-weight: 100;
+					bottom: 150px;
+					left: 20px;
+					
+				}
+
+			}
+		}
+		.bage {
+			position: absolute;
+			display: block;
+			color: #fff;
+			font-size: 12px;
+			font-weight: 100;
+			padding: 10px;
+			background-color: $mainColor;
+			top: 12px;
+			left: 15px;
+		}
+	}
+	&_pattren {
+		position: absolute;
+		background-color: transparent;
+		z-index: -1;
+		left: 44%;
+		bottom: -5%;
+	}
+}

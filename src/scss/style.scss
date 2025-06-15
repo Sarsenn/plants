@@ -1,0 +1,12 @@
+// Global SCSS-files imports
+@import "./vars";
+@import "./reset";
+@import "./global";
+@import "./fonts";
+@import "./components/btn";
+
+* {
+  font-family: "Steppe";
+  font-size: 30px;
+}
+@import "./header";

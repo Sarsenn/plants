@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <title>Index</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+
+  <body class="main__body">
+    <header class="header" id="header">
+      <div class="container">
+        <nav class="header_nav">
+          <ul class="header_navbar">
+            <li><a href="#">МАГАЗИН</a></li>
+            <li><a href="#">АССОРТИМЕНТ</a></li>
+            <li><a href="#">НОВОСТИ</a></li>
+            <li><a href="#">ДОСТАВКА</a></li>
+          </ul>
+          <div class="logo"><img src="../img/logo.svg" alt="logo" /></div>
+          <div class="header_modal">
+            <a href="#"><img src="../img/search.svg" alt="search" /></a>
+            <a href="#"><img src="../img/user.svg" alt="user" /></a>
+          </div>
+        </nav>
+
+        <div class="header_wrapper">
+          <div class="header_descr">
+            <h1>Суккуленты — когда природа становится искусством</h1>
+            <p>
+              Каждое растение — как маленький арт-объект. Создайте уютное
+              зелёное пространство вокруг себя легко и с любовью.
+            </p>
+            <div class="order">
+              <button class="btn">Заказать</button>
+              <a href="#">
+                ПОСМОТЕРЬ
+                <img src="../img/arrow.svg" alt="arrow" />
+              </a>
+            </div>
+          </div>
+
+          <div class="header_showcase">
+            <a class="case" href="#">
+              <div class="bage">НОВИНКА</div>
+              <img src="img/image2.svg" alt="second" />
+            </a>
+
+            <a class="case" href="#">
+              <div class="bage">ХИТ</div>
+              <img
+                src="img/depositphotos_59326497-stock-photo-succulents-in-a-vase.jpg"
+                alt="first"
+              />
+              <h2>Создан для уюта</h2>
+              <p>
+                Тихая, неприхотливая и стильная. Эта суккулентная композиция
+                впишется в любой интерьер, добавив ему тёплой живости и
+                спокойствия.
+              </p>
+              <button class="btn btn-inner" data-url>Инфо</button>
+            </a>
+
+            <a class="case" href="#">
+              <div class="bage">ЛУЧШИЙ ВЫБОР</div>
+              <img src="img/image3.svg" alt="third" />
+            </a>
+          </div>
+          <div class="header_pattren">
+            <img src="img/pattern.svg" alt="pattern" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="slider">
+      <div class="slider_head">
+        <h3>Избранное</h3>
+        <p>Все</p>
+      </div>
+      <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 3</div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"><img src="img/prev.svg" alt="prev"></div>
+          <div class="swiper-button-next"><img src="img/next.svg" alt="next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+
+    </section>
+  </body>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/scripts.min.js"></script>
+</html>
