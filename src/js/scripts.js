@@ -1,11 +1,11 @@
 'use strict';
 
 const swiper = new Swiper('.swiper', {
-  speed: 400,
-  spaceBetween: 100,
-	  navigation: {
+  navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  loop: true
+  loop:true,
+  autoplay:true,
+  speed: 800
 });
